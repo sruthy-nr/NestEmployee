@@ -8,13 +8,26 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { UserNavComponent } from './user-nav/user-nav.component';
 
-const myRoute:Routes=[]
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminComponent
+  },
+  {
+    path:"dash",
+    component:DashboardComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavigationComponent,
+    UserNavComponent
   ],
   imports: [
     BrowserModule,
