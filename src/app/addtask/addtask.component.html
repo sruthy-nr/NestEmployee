@@ -1,0 +1,25 @@
+<app-dashboard></app-dashboard>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h2>ADD EMPLOYEE</h2>
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">TASK</label>
+                    <input type="text" name="task" [(ngModel)]="task" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">EMPLOYEE ID</label>
+                    <input type="text" name="empid" [(ngModel)]="empid" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"></label>
+                    <button (click)="readValues()" class="btn btn-primary">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
