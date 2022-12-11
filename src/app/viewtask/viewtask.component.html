@@ -1,0 +1,21 @@
+<app-user-nav></app-user-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label"></label>
+                    <button (click)="readValues()" class="btn btn-primary">TASKS</button>
+                </div>
+            </div>
+            <div class="row g-3 mt-3" *ngFor="let i of searchdata">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <textarea type="text" name="complaint" class="form-control">{{i.task}}</textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button class="btn btn-primary" (click)="update(i.id)">UPDATE STATUS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
