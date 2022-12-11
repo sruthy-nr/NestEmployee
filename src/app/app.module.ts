@@ -13,6 +13,10 @@ import { UserNavComponent } from './user-nav/user-nav.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { AddtaskComponent } from './addtask/addtask.component';
+import { ViewtaskComponent } from './viewtask/viewtask.component';
+import { UpdatestatusComponent } from './updatestatus/updatestatus.component';
+import { EmploginComponent } from './emplogin/emplogin.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 
 const myRoute:Routes=[
   {
@@ -34,6 +38,22 @@ const myRoute:Routes=[
   {
     path:"addtask",
     component:AddtaskComponent
+  },
+  {
+    path:"emplogin",
+    component:EmploginComponent
+  },
+  {
+    path:"profile",
+    component:ViewprofileComponent
+  },
+  {
+    path:"viewtask",
+    component:ViewtaskComponent
+  },
+  {
+    path:"update",
+    component:UpdatestatusComponent
   }
 ]
 @NgModule({
@@ -45,7 +65,11 @@ const myRoute:Routes=[
     UserNavComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
-    AddtaskComponent
+    AddtaskComponent,
+    ViewtaskComponent,
+    UpdatestatusComponent,
+    EmploginComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,
